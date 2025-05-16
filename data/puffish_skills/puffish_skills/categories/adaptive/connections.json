@@ -1,9 +1,16 @@
 {
     "normal": {
         "bidirectional": [
+            ["root_experience","agility_I"],
+            ["agility_I","agility_II"],
+            ["agility_II","agility_III"],
             ["root_experience","physical_strength_I"],
             ["physical_strength_I","physical_strength_II"],
             ["physical_strength_II","physical_strength_III"],
+            ["agility_I","feather_falling_I"],
+            ["agility_II","feather_falling_II"],
+            ["physical_strength_I","feather_falling_I"],
+            ["physical_strength_II","feather_falling_II"],
 			["root_experience", "macgyver"],
 			["macgyver","practiced_swing"],
 			["macgyver","mining_I"],
