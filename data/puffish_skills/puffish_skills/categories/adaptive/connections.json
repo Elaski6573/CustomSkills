@@ -1,0 +1,20 @@
+{
+    "normal": {
+        "bidirectional": [
+            ["root_experience","physical_strength_I"],
+            ["physical_strength_I","physical_strength_II"],
+            ["physical_strength_II","physical_strength_III"],
+			["root_experience", "macgyver"],
+			["macgyver","practiced_swing"],
+			["macgyver","mining_I"],
+			["mining_I","mining_II"],
+			["mining_II","mining_III"],
+			["mining_I","fortune_I"],
+			["fortune_I","fortune_II"],
+			["fortune_II","fortune_III"]
+        ]
+    },
+    "exclusive": {
+        "bidirectional": []
+    }
+}

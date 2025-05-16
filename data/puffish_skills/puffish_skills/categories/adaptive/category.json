@@ -1,0 +1,11 @@
+{
+	"unlocked_by_default": true,
+	"title": "Adaptive(적응형)",
+	"icon": {
+		"type": "item",
+		"data": {
+			"item": "experience_bottle"
+		}
+	},
+	"background": "textures/gui/advancements/backgrounds/adventure.png"
+}

@@ -1,0 +1,126 @@
+{
+    "experience_per_level": {
+        "type": "expression",
+        "data": {
+            "expression": "1000 + mod(level, 10) * 100 + floor((level / 10)) * 1000"
+        }
+    },
+    "sources": [
+        {
+            "type": "puffish_skills:shared_kill_entity",
+            "data": {
+                "variables": {
+                    "dropped_xp": {
+                        "operations": [{ "type": "get_dropped_experience" }]
+                    },
+                    "max_health": {
+                        "operations": [
+                            { "type": "get_killed_living_entity" },
+                            { "type": "get_max_health" }
+                        ]
+                    }
+                },
+                "experience": "dropped_xp + max_health",
+                "anti_farming": {
+                    "limit_per_chunk": 30,
+                    "reset_after_seconds": 300
+                }
+            }
+        },
+        {
+            "type": "puffish_skills:break_block",
+            "data": {
+                "variables": {
+                    "mineable_axe": {
+                        "operations": [
+                            {
+                                "type": "get_broken_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#mineable/axe"
+                                }
+                            }
+                        ]
+                    },
+                    "mineable_hoe": {
+                        "operations": [
+                            {
+                                "type": "get_broken_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#mineable/hoe"
+                                }
+                            }
+                        ]
+                    },
+                    "mineable_pickaxe": {
+                        "operations": [
+                            {
+                                "type": "get_broken_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#mineable/pickaxe"
+                                }
+                            }
+                        ]
+                    },
+                    "mineable_shovel": {
+                        "operations": [
+                            {
+                                "type": "get_broken_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#mineable/shovel"
+                                }
+                            }
+                        ]
+                    },
+                    "ores": {
+                        "operations": [
+                            {
+                                "type": "get_broken_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#c:ores"
+                                }
+                            }
+                        ]
+                    },
+                    "leaves": {
+                        "operations": [
+                            {
+                                "type": "get_broken_block_state"
+                            },
+                            {
+                                "type": "puffish_skills:test",
+                                "data": {
+                                    "block": "#minecraft:leaves"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "experience": [
+                    {
+                        "condition": "(!ores & !leaves) & (mineable_axe | mineable_hoe | mineable_pickaxe | mineable_shovel)",
+                        "expression": "1"
+                    },
+                    {
+                        "condition": "ores",
+                        "expression": "250"
+                    }
+                ]
+            }
+        }
+    ]
+}

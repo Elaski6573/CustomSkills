@@ -1,0 +1,74 @@
+{
+    "root_experience": {
+        "definition": "root_experience",
+        "x": 0,
+        "y": 0,
+        "root": true
+    },
+    "physical_strength_I": {
+        "definition": "physical_strength_I",
+        "x": 64,
+        "y": -32,
+        "root": false
+    },
+    "physical_strength_II": {
+        "definition": "physical_strength_II",
+        "x": 96,
+        "y": -64,
+        "root": false
+    },
+    "physical_strength_III": {
+        "definition": "physical_strength_III",
+        "x": 128,
+        "y": -96,
+        "root": false
+    },
+    "macgyver": {
+        "definition": "macgyver",
+        "x": -64,
+        "y": 0,
+        "root": false
+    },
+    "practiced_swing": {
+        "definition": "practiced_swing",
+        "x": -64,
+        "y": -32,
+        "root": false
+    },
+    "mining_I": {
+        "definition": "mining_I",
+        "x": -96,
+        "y": 0,
+        "root": false
+    },
+    "mining_II": {
+        "definition": "mining_II",
+        "x": -128,
+        "y": 0,
+        "root": false
+    },
+    "mining_III": {
+        "definition": "mining_III",
+        "x": -160,
+        "y": 0,
+        "root": false
+    },
+    "fortune_I": {
+        "definition": "fortune_I",
+        "x": -96,
+        "y": -32,
+        "root": false
+    },
+	"fortune_II": {
+		"definition": "fortune_II",
+		"x": -128,
+		"y": -32,
+		"root": false
+	},
+	"fortune_III": {
+		"definition": "fortune_III",
+		"x": -160,
+		"y": -32,
+		"root": false
+	}
+}
