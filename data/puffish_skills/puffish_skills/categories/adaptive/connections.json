@@ -17,7 +17,11 @@
             ["excavation_II", "excavation_III"],
 			["mining_I","fortune_I"],
 			["fortune_I","fortune_II"],
-			["fortune_II","fortune_III"]
+			["fortune_II","fortune_III"],
+            ["woodcutting_I","strength_I"],
+            ["practiced_swing","strength_I"],
+            ["strength_I","strength_II"],
+            ["strength_II","strength_III"]
         ]
     },
     "exclusive": {

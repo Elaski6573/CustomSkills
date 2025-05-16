@@ -464,39 +464,6 @@
             }
         ]
     },
-
-    "practiced_swing": {
-        "title": "익숙한 손놀림",
-        "frame": {
-            "type": "advancement",
-            "data": {
-                "frame": "task"
-            }
-        },
-        "description": [
-            { "text": "기본 " },
-            { "text": "공격 속도", "color": "aqua" },
-            { "text": "가 " },
-            { "text": "5%", "color": "green" },
-            { "text": " 증가합니다." }
-        ],
-        "icon": {
-            "type": "item",
-            "data": {
-                "item": "wooden_sword"
-            }
-        },
-        "rewards": [
-            {
-                "type": "puffish_skills:attribute",
-                "data": {
-                    "attribute": "generic.attack_speed",
-                    "value": 0.05,
-                    "operation": "multiply_base"
-                }
-            }
-        ]
-    },
     "fortune_I": {
         "title": "행운 I",
         "frame": {
@@ -540,7 +507,7 @@
         "description": [
             { "text": "행운", "color": "yellow" },
             { "text": "이 ", "color": "gray" },
-            { "text": "0.2", "color": "green" },
+            { "text": "0.1", "color": "green" },
             { "text": " 증가합니다.", "color": "gray" }
         ],
         "icon": {
@@ -555,7 +522,7 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "puffish_attributes:fortune",
-                    "value": 0.2,
+                    "value": 0.1,
                     "operation": "addition"
                 }
             }
@@ -572,7 +539,7 @@
         "description": [
             { "text": "행운", "color": "yellow" },
             { "text": "이 ", "color": "gray" },
-            { "text": "0.3", "color": "green" },
+            { "text": "0.1", "color": "green" },
             { "text": " 증가합니다.", "color": "gray" }
         ],
         "icon": {
@@ -587,37 +554,124 @@
                 "type": "puffish_skills:attribute",
                 "data": {
                     "attribute": "puffish_attributes:fortune",
-                    "value": 0.3,
+                    "value": 0.1,
                     "operation": "addition"
                 }
             }
         ]
     },
-    "root_ranged_damage+3%": {
-        "title": "+3% Ranged Damage",
+	"practiced_swing": {
+        "title": "익숙한 손놀림",
         "frame": {
             "type": "advancement",
             "data": {
-                "frame": "challenge"
+                "frame": "task"
             }
         },
+        "description": [
+            { "text": "기본 " },
+            { "text": "공격 속도", "color": "aqua" },
+            { "text": "가 " },
+            { "text": "5%", "color": "green" },
+            { "text": " 증가합니다." }
+        ],
         "icon": {
             "type": "item",
             "data": {
-                "item": "bow"
+                "item": "wooden_sword"
             }
         },
         "rewards": [
             {
                 "type": "puffish_skills:attribute",
                 "data": {
-                    "attribute": "puffish_skills:player.ranged_damage",
-                    "value": 0.03,
-                    "operation": "multiply_total"
+                    "attribute": "generic.attack_speed",
+                    "value": 0.05,
+                    "operation": "multiply_base"
                 }
             }
         ]
     },
+	"strength_I": {
+		"title": "힘 I",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"description": [{ "text": "근접 공격력", "color":"red" },{ "text": "이 ","color":"gray"},{ "text": "1%", "color": "green" },{ "text": " 증가합니다.","color":"gray"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:melee_damage",
+					"value": 0.01,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"strength_II": {
+		"title": "힘 II",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"description": [{ "text": "근접 공격력", "color":"red" },{ "text": "이 ","color":"gray"},{ "text": "2%", "color": "green" },{ "text": " 증가합니다.","color":"gray"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"cost": 2,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:melee_damage",
+					"value": 0.02,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
+	"strength_III": {
+		"title": "힘 III",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"description": [{ "text": "근접 공격력", "color":"red" },{ "text": "이 ","color":"gray"},{ "text": "3%", "color": "green" },{ "text": " 증가합니다.","color":"gray"}],
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "strength"
+			}
+		},
+		"cost": 3,
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:melee_damage",
+					"value": 0.03,
+					"operation": "multiply_total"
+				}
+			}
+		]
+	},
     "resistance+1%": {
         "title": "+1% Resistance",
         "icon": {

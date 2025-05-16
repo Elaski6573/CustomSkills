@@ -35,6 +35,24 @@
         "y": -32,
         "root": false
     },
+    "strength_I": {
+        "definition": "strength_I",
+        "x": -64,
+        "y": -64,
+        "root": false
+    },
+    "strength_II": {
+        "definition": "strength_II",
+        "x": -48,
+        "y": -96,
+        "root": false
+    },
+    "strength_III": {
+        "definition": "strength_III",
+        "x": -32,
+        "y": -128,
+        "root": false
+    },
     "woodcutting_I": {
         "definition": "woodcutting_I",
         "x": -112,
