@@ -35,6 +35,24 @@
         "y": -32,
         "root": false
     },
+    "woodcutting_I": {
+        "definition": "woodcutting_I",
+        "x": -112,
+        "y": -32,
+        "root": false
+    },
+    "woodcutting_II": {
+        "definition": "woodcutting_II",
+        "x": -144,
+        "y": -32,
+        "root": false
+    },
+    "woodcutting_III": {
+        "definition": "woodcutting_III",
+        "x": -176,
+        "y": -32,
+        "root": false
+    },
     "mining_I": {
         "definition": "mining_I",
         "x": -96,
@@ -53,22 +71,40 @@
         "y": 0,
         "root": false
     },
+    "excavation_I": {
+        "definition": "excavation_I",
+        "x": -96,
+        "y": 32,
+        "root": false
+    },
+    "excavation_II": {
+        "definition": "excavation_II",
+        "x": -128,
+        "y": 32,
+        "root": false
+    },
+    "excavation_III": {
+        "definition": "excavation_III",
+        "x": -160,
+        "y": 32,
+        "root": false
+    },
     "fortune_I": {
         "definition": "fortune_I",
         "x": -96,
-        "y": -32,
+        "y": -64,
         "root": false
     },
 	"fortune_II": {
 		"definition": "fortune_II",
 		"x": -128,
-		"y": -32,
+		"y": -64,
 		"root": false
 	},
 	"fortune_III": {
 		"definition": "fortune_III",
 		"x": -160,
-		"y": -32,
+		"y": -64,
 		"root": false
 	}
 }

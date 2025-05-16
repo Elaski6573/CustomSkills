@@ -9,6 +9,12 @@
 			["macgyver","mining_I"],
 			["mining_I","mining_II"],
 			["mining_II","mining_III"],
+            ["macgyver", "woodcutting_I"],
+            ["woodcutting_I", "woodcutting_II"],
+            ["woodcutting_II", "woodcutting_III"],
+            ["macgyver", "excavation_I"],
+            ["excavation_I", "excavation_II"],
+            ["excavation_II", "excavation_III"],
 			["mining_I","fortune_I"],
 			["fortune_I","fortune_II"],
 			["fortune_II","fortune_III"]
