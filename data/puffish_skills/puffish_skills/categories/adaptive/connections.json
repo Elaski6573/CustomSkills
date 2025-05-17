@@ -4,6 +4,7 @@
             ["root_experience","agility_I"],
             ["agility_I","agility_II"],
             ["agility_II","agility_III"],
+            ["agility_I","quick_draw_I"],
             ["root_experience","physical_strength_I"],
             ["physical_strength_I","physical_strength_II"],
             ["physical_strength_II","physical_strength_III"],
@@ -25,11 +26,20 @@
 			["mining_I","fortune_I"],
 			["fortune_I","fortune_II"],
 			["fortune_II","fortune_III"],
+            ["fortune_I","luck_I"],
+            ["luck_I","luck_II"],
+            ["luck_II","luck_III"],
             ["woodcutting_I","strength_I"],
             ["practiced_swing","strength_I"],
             ["strength_I","strength_II"],
-            ["strength_II","strength_III"]
-        ]
+            ["strength_II","strength_III"],
+            ["practiced_swing","quick_draw_I"],
+            ["quick_draw_I","quick_draw_II"],
+            ["quick_draw_II","quick_draw_III"]
+        ],
+        "unidirectional": [
+            
+		]
     },
     "exclusive": {
         "bidirectional": []

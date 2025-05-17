@@ -83,6 +83,24 @@
         "y": -128,
         "root": false
     },
+    "quick_draw_I": {
+        "definition": "quick_draw_I",
+        "x": 0,
+        "y": -64,
+        "root": false
+    },
+    "quick_draw_II": {
+        "definition": "quick_draw_II",
+        "x": 0,
+        "y": -96,
+        "root": false
+    },
+    "quick_draw_III": {
+        "definition": "quick_draw_III",
+        "x": 0,
+        "y": -128,
+        "root": false
+    },
     "woodcutting_I": {
         "definition": "woodcutting_I",
         "x": -112,
@@ -154,5 +172,23 @@
 		"x": -160,
 		"y": -64,
 		"root": false
-	}
+	},
+    "luck_I": {
+        "definition": "luck_I",
+        "x": -96,
+        "y": -96,
+        "root": false
+    },
+    "luck_II": {
+        "definition": "luck_II",
+        "x": -128,
+        "y": -96,
+        "root": false
+    },
+    "luck_III": {
+        "definition": "luck_III",
+        "x": -160,
+        "y": -96,
+        "root": false
+    }
 }
