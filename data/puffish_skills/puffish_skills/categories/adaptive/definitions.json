@@ -1,4 +1,30 @@
 {
+    "description": {
+        "title": {"text": "이 스킬은 설명용입니다.", "color": "white"},
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "goal"
+            }
+        },
+        "description": [{"text":"스킬은 발전시키는데 포인트가 필요하며 필요한 포인트량은 설명에 있습니다.\n"},
+                        {"text":"블럭을 캐거나, 몹을 죽이면 경험치를 얻으실 수 있습니다.\n"},
+                        {"text":"쉬프트키를 누르면 추가 설명을 보실 수 있습니다."}],
+        "extra_description": [
+            {"text":"각 스킬은 기본과 전체로 나뉘어 있습니다.\n"},
+            {"text":"%단위로 올려주는 스킬은 기본은 합연산, 전체는 곱연산입니다.\n"},
+            {"text":"예시\n"},
+            {"text":"합연산 >> 8 * (1 + 0.1 + 0.2) = 10.4 (30% 증가)\n"},
+            {"text":"곱연산 >> 8 * (1 + 0.1) * (1 + 0.2) = 10.56 (32% 증가)\n"},
+            {"text":"곱연산의 경우 스킬 명칭에 전체가 붙습니다."}
+        ],
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "barrier"
+            }
+        }
+    },
     "root_experience": {
         "title": "능숙한 생존가",
         "frame": {
@@ -22,7 +48,7 @@
                 "data": {
                     "attribute": "additionalentityattributes:player.dropped_experience",
                     "value": 0.1,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -48,8 +74,8 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.movement_speed",
-					"value": 0.001,
-					"operation": "addition"
+					"value": 0.01,
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -76,8 +102,8 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.movement_speed",
-					"value": 0.002,
-					"operation": "addition"
+					"value": 0.02,
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -104,8 +130,8 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.movement_speed",
-					"value": 0.003,
-					"operation": "addition"
+					"value": 0.03,
+					"operation": "multiply_base"
 				}
 			}
 		]
@@ -201,8 +227,8 @@
 				"frame": "task"
 			}
 		},
-		"description": [{"text":"낙하 피해가 "},{"text": "2%","color": "green"},{"text": " 감소합니다.\n"},
-                        {"text":"해금 필요 : 체력 I, 민첩함함 I \n","italic": true,"color":"gray"},
+		"description": [{"text":"낙하 피해"},{"text":"가 ","color":"gray"},{"text": "2%","color": "green"},{"text": " 감소합니다.\n","color":"gray"},
+                        {"text":"해금 필요 : 체력 I, 민첩함 I \n","italic": true,"color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"1","color":"green"}],
 		"icon": {
 			"type": "effect",
@@ -230,8 +256,8 @@
 				"frame": "task"
 			}
 		},
-		"description": [{ "text": "낙하 피해가 " },{ "text": "3%", "color": "green" },{ "text": " 감소합니다." },
-                        {"text":"\n해금 필요 : 체력 II, 민첩함 II \n","italic": true,"color":"gray"},
+		"description": [{"text":"낙하 피해"},{"text":"가 ","color":"gray"},{"text":"3%","color":"green"},{"text":" 감소합니다.\n","color":"gray"},
+                        {"text":"해금 필요 : 체력 II, 민첩함 II \n","italic": true,"color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"2","color":"green"}],
 		"icon": {
 			"type": "effect",
@@ -298,14 +324,14 @@
         ]
     },
     "mining_I": {
-        "title": "채굴 I",
+        "title": "채광광 I",
         "frame": {
             "type": "advancement",
             "data": {
                 "frame": "task"
             }
         },
-        "description": [{ "text":"채굴 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1%","color":"green"},{"text":" 증가합니다.\n","color": "gray"},
+        "description": [{"text":"기본 ","color":"gray"},{ "text":"채광 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1%","color":"green"},{"text":" 증가합니다.\n","color": "gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"1","color":"green"}],
         "icon": {
             "type": "item",
@@ -319,20 +345,20 @@
                 "data": {
                     "attribute": "puffish_skills:pickaxe_speed",
                     "value": 0.01,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
     },
     "mining_II": {
-        "title": "채굴 II",
+        "title": "채광광 II",
         "frame": {
             "type": "advancement",
             "data": {
                 "frame": "task"
             }
         },
-        "description": [{"text":"채굴 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
+        "description": [{"text":"기본 ","color":"gray"},{"text":"채광 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"2","color":"green"}],
         "icon": {
             "type": "item",
@@ -347,20 +373,20 @@
                 "data": {
                     "attribute": "puffish_skills:pickaxe_speed",
                     "value": 0.015,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
     },
     "mining_III": {
-        "title": "채굴 III",
+        "title": "채광 III",
         "frame": {
             "type": "advancement",
             "data": {
                 "frame": "task"
             }
         },
-        "description": [{"text":"채굴 속도","color": "yellow"},{"text":"가","color":"gray"},{ "text":" 2.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
+        "description": [{"text":"기본 ","color":"gray"},{"text":"채광 속도","color": "yellow"},{"text":"가","color":"gray"},{ "text":" 2.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"3","color":"green"}],
         "icon": {
             "type": "item",
@@ -375,7 +401,7 @@
                 "data": {
                     "attribute": "puffish_skills:pickaxe_speed",
                     "value": 0.025,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -388,7 +414,7 @@
                 "frame": "task"
             }
         },
-        "description": [{"text":"벌목 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1%","color":"green"},{"text":" 증가합니다.\n","color": "gray"},
+        "description": [{"text":"기본 ","color":"gray"},{"text":"벌목 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1%","color":"green"},{"text":" 증가합니다.\n","color": "gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"1","color":"green"}],
         "icon": {
             "type": "item",
@@ -402,7 +428,7 @@
                 "data": {
                     "attribute": "puffish_skills:axe_speed",
                     "value": 0.01,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -415,7 +441,7 @@
                 "frame": "task"
             }
         },
-        "description": [{"text":"벌목 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
+        "description": [{"text":"기본 ","color":"gray"},{"text":"벌목 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"2","color":"green"}],
         "icon": {
             "type": "item",
@@ -430,7 +456,7 @@
                 "data": {
                     "attribute": "puffish_skills:axe_speed",
                     "value": 0.015,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -443,7 +469,7 @@
                 "frame": "task"
             }
         },
-        "description": [{"text":"벌목 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 2.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
+        "description": [{"text":"기본 ","color":"gray"},{"text":"벌목 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 2.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"3","color":"green"}],
         "icon": {
             "type": "item",
@@ -458,7 +484,7 @@
                 "data": {
                     "attribute": "puffish_skills:axe_speed",
                     "value": 0.025,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -471,7 +497,7 @@
                 "frame": "task"
             }
         },
-        "description": [{"text":"굴착 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
+        "description": [{"text":"기본 ","color":"gray"},{"text":"굴착 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"1","color":"green"}],
         "icon": {
             "type": "item",
@@ -485,7 +511,7 @@
                 "data": {
                     "attribute": "puffish_skills:shovel_speed",
                     "value": 0.01,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -498,7 +524,7 @@
                 "frame": "task"
             }
         },
-        "description":[{"text":"굴착 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
+        "description":[{"text":"기본 ","color":"gray"},{"text":"굴착 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 1.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"2","color":"green"}],
         "icon": {
             "type": "item",
@@ -513,7 +539,7 @@
                 "data": {
                     "attribute": "puffish_skills:shovel_speed",
                     "value": 0.015,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -526,7 +552,7 @@
                 "frame": "task"
             }
         },
-        "description":[{"text":"굴착 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 2.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
+        "description" :[{"text":"기본 ","color":"gray"},{"text":"굴착 속도","color":"yellow"},{"text":"가","color":"gray"},{"text":" 2.5%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"3","color":"green"}],
         "icon": {
             "type": "item",
@@ -541,7 +567,7 @@
                 "data": {
                     "attribute": "puffish_skills:shovel_speed",
                     "value": 0.025,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -630,6 +656,45 @@
             }
         ]
     },
+    "advanced_tool_handling": {
+        "title": "고급 도구 운용술",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "challenge"
+            }
+        },
+        "description": [{"text":"모든 "},{"text":"채굴 속도","color":"yellow"},{"text":"가 "},{"text":"0.5%","color":"green"},{"text":" 증가합니다.\n"},
+                        {"text":"블록 상호 작용 범위","color":"aqua"},{"text":"가 "},{"text":"0.5칸","color":"green"},{"text":" 증가합니다.\n"},
+                        {"text":"\n필요한 포인트 : "},{"text":"5","color":"green"}],
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "netherite_pickaxe"
+            }
+        },
+        "cost": 5,
+        "required_skills": 3,
+        "size": 2,
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "minecraft:player.block_break_speed",
+                    "value": 0.005,
+                    "operation": "multiply_base"
+                }
+            },
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "minecraft:player.block_interaction_range",
+                    "value": 0.5,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
 	"practiced_swing": {
         "title": "익숙한 손놀림",
         "frame": {
@@ -665,8 +730,8 @@
 				"frame": "task"
 			}
 		},
-		"description": [{"text": "근접 피해량","color":"red" },{"text": "이 ","color":"gray"},{"text": "1%","color":"green" },{"text": " 증가합니다.","color":"gray"},
-					    {"text": "\n해금 필요 : 능숙한 손놀림, 벌목 I \n","italic": true,"color":"gray"},
+		"description": [{"text":"기본 ","color":"gray"},{"text":"근접 피해량","color":"red"},{"text":"이 ","color":"gray"},{"text":"1%","color":"green"},{"text":" 증가합니다.","color":"gray"},
+					    {"text":"\n해금 필요 : 능숙한 손놀림, 벌목 I \n","italic": true,"color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"1","color":"green"}],	
 		"icon": {
 			"type": "effect",
@@ -694,7 +759,7 @@
 				"frame": "task"
 			}
 		},
-		"description": [{ "text": "근접 피해량", "color":"red" },{ "text": "이 ","color":"gray"},{ "text": "2%", "color": "green" },{ "text": " 증가합니다.\n","color":"gray"},
+		"description": [{"text":"기본 ","color":"gray"},{"text":"근접 피해량","color":"red"},{"text":"이 ","color":"gray"},{ "text": "2%", "color": "green" },{ "text": " 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"2","color":"green"}],
 		"icon": {
 			"type": "effect",
@@ -722,7 +787,7 @@
 				"frame": "task"
 			}
 		},
-		"description": [{ "text": "근접 피해량", "color":"red" },{ "text": "이 ","color":"gray"},{ "text": "3%", "color": "green" },{ "text": " 증가합니다.\n","color":"gray"},
+		"description": [{"text":"기본 ","color":"gray"},{"text":"근접 피해량","color":"red"},{"text":"이 ","color":"gray"},{"text": "3%","color":"green"},{"text":" 증가합니다.\n","color":"gray"},
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"3","color":"green"}],
 		"icon": {
 			"type": "effect",
@@ -750,7 +815,7 @@
                 "frame": "task"
             }
         },
-        "description": [{"text":"활의 "},{"text":"조준 속도","color":"aqua"},{"text":"나 석궁의 "},{"text":"장전 속도","color":"aqua"},{"text":"가 "},{"text":"1%","color":"green"},{"text":" 증가합니다.\n"},
+        "description": [{"text":"활의 "},{"text":"기본 ","color":"gray"},{"text":"조준 속도","color":"aqua"},{"text":"나 석궁의 "},{"text":"기본 ","color":"gray"},{"text":"장전 속도","color":"aqua"},{"text":"가 "},{"text":"1%","color":"green"},{"text":" 증가합니다.\n"},
                         {"text":"\n필요한 포인트 : "},{"text":"1","color":"green"}],
         "icon": {
             "type": "item",
@@ -765,7 +830,7 @@
                 "data": {
                     "attribute": "apothic_attributes:draw_speed",
                     "value": 0.01,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -778,7 +843,7 @@
                 "frame": "task"
             }
         },
-        "description": [{"text":"활의 "},{"text":"조준 속도","color":"aqua"},{"text":"나 석궁의 "},{"text":"장전 속도","color":"aqua"},{"text":"가 "},{"text":"1.5%","color":"green"},{"text":" 증가합니다.\n"},
+        "description": [{"text":"활의 "},{"text":"기본 ","color":"gray"},{"text":"조준 속도","color":"aqua"},{"text":"나 석궁의 "},{"text":"기본 ","color":"gray"},{"text":"장전 속도","color":"aqua"},{"text":"가 "},{"text":"1.5%","color":"green"},{"text":" 증가합니다.\n"},
                         {"text":"\n필요한 포인트 : "},{"text":"2","color":"green"}],
         "icon": {
             "type": "item",
@@ -793,7 +858,7 @@
                 "data": {
                     "attribute": "apothic_attributes:draw_speed",
                     "value": 0.015,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -806,7 +871,7 @@
                 "frame": "task"
             }
         },
-        "description": [{"text":"활의 "},{"text":"조준 속도","color":"aqua"},{"text":"나 석궁의 "},{"text":"장전 속도","color":"aqua"},{"text":"가 "},{"text":"1%","color":"green"},{"text":" 증가합니다.\n"},
+        "description": [{"text":"활의 "},{"text":"기본 ","color":"gray"},{"text":"조준 속도","color":"aqua"},{"text":"나 석궁의 "},{"text":"기본 ","color":"gray"},{"text":"장전 속도","color":"aqua"},{"text":"가 "},{"text":"2.5%","color":"green"},{"text":" 증가합니다.\n"},
                         {"text":"\n필요한 포인트 : "},{"text":"3","color":"green"}],
         "icon": {
             "type": "item",
@@ -821,7 +886,7 @@
                 "data": {
                     "attribute": "apothic_attributes:draw_speed",
                     "value": 0.025,
-                    "operation": "multiply_total"
+                    "operation": "multiply_base"
                 }
             }
         ]
@@ -913,4 +978,5 @@
             }
         ]
     }
+
 }

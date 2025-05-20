@@ -1,4 +1,10 @@
 {
+    "description": {
+        "definition": "description",
+        "x": -48,
+        "y": 48,
+        "root": false
+    },
     "root_experience": {
         "definition": "root_experience",
         "x": 0,
@@ -153,6 +159,12 @@
         "definition": "excavation_III",
         "x": -160,
         "y": 32,
+        "root": false
+    },
+    "advanced_tool_handling": {
+        "definition": "advanced_tool_handling",
+        "x": -224,
+        "y": 16,
         "root": false
     },
     "fortune_I": {
