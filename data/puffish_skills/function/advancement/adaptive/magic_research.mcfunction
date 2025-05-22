@@ -1,0 +1,1 @@
+puffish_skills skills unlock @s puffish_skills:adaptive magic_research
