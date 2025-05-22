@@ -1,6 +1,7 @@
 {
     "normal": {
         "bidirectional": [
+            ["root_experience","magic_research"],
             ["root_experience","agility_I"],
             ["agility_I","agility_II"],
             ["agility_II","agility_III"],

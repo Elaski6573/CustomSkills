@@ -977,6 +977,25 @@
                 }
             }
         ]
+    },
+    "magic_research": {
+        "title": "마법 이해",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "challenge"
+            }
+        },
+        "description": [{"text":"마법","color":"yellow"},{"text":"에 대한 전반적인 이해를 가집니다.\n"},
+                        {"text":"마법 부여자","color":"light_purple","italic":true},{"text":" 발전과제를 완료하면 자동으로 해금됩니다.","italic":true}],
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "enchanting_table"
+            }
+        },
+        "required_skills": 2,
+        "size": 2        
     }
 
 }

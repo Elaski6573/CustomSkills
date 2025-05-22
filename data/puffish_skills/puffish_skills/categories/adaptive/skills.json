@@ -202,5 +202,11 @@
         "x": -160,
         "y": -96,
         "root": false
+    },
+    "magic_research": {
+        "definition": "magic_research",
+        "x": 0,
+        "y": 80,
+        "root": false
     }
 }
