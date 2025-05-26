@@ -53,6 +53,37 @@
             }
         ]
     },
+    "stamina_I": {
+        "title": "지구력_I",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "task"
+            }
+        },
+        "description": [{"text":"기본 "},{"text":"지구력","color":"white"},{"text":"이"},{"text":" 1%","color":"green"},{"text":" 증가합니다.\n"},
+                        {"text":"쉬프트키를 눌러 더 자세한 설명을 보세요","color":"gray"},
+                        {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"1","color":"green"}],
+        "extra_description": [
+            {"text":"\n허기를 소비하는데 사용되는 지구력 수치를 증가시킵니다.\n"},
+            {"text":"이는 곧 스테미나 총량을 증가시켜 소비되는 지지\n"}],
+        "icon": {
+            "type": "effect",
+            "data": {
+                "effect": "absorption"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_attributes:stamina",
+                    "value": 0.01,
+                    "operation": "multiply_base"
+                }
+            }
+        ]
+    },
 	"agility_I": {
 		"title": "민첩함 I",
 		"frame": {

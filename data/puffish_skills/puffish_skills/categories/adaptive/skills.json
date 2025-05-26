@@ -11,54 +11,60 @@
         "y": 0,
         "root": true
     },
-    "agility_I": {
-        "definition": "agility_I",
-        "x": 32,
-        "y": -64,
-        "root": false
-    },
-    "agility_II": {
-        "definition": "agility_II",
-        "x": 64,
-        "y": -96,
-        "root": false
-    },
-    "agility_III": {
-        "definition": "agility_III",
-        "x": 96,
-        "y": -128,
-        "root": false
-    },
-    "physical_strength_I": {
-        "definition": "physical_strength_I",
+    "stamina_I": {
+        "definition": "stamina_I",
         "x": 64,
         "y": -32,
         "root": false
     },
-    "physical_strength_II": {
-        "definition": "physical_strength_II",
-        "x": 96,
-        "y": -64,
-        "root": false
-    },
-    "physical_strength_III": {
-        "definition": "physical_strength_III",
-        "x": 128,
-        "y": -96,
-        "root": false
-    },
-    "feather_falling_I": {
-        "definition": "feather_falling_I",
-        "x": 64,
-        "y": -64,
-        "root": false
-    },
-    "feather_falling_II": {
-        "definition": "feather_falling_II",
-        "x": 96,
-        "y": -96,
-        "root": false
-    },
+    	"agility_I": {
+		"definition": "agility_I",
+		"x": 64,
+		"y": -64,
+		"root": false
+	},
+	"agility_II": {
+		"definition": "agility_II",
+		"x": 96,
+		"y": -96,
+		"root": false
+	},
+	"agility_III": {
+		"definition": "agility_III",
+		"x": 128,
+		"y": -128,
+		"root": false
+	},
+	"physical_strength_I": {
+		"definition": "physical_strength_I",
+		"x": 96,
+		"y": -32,
+		"root": false
+	},
+	"physical_strength_II": {
+		"definition": "physical_strength_II",
+		"x": 128,
+		"y": -64,
+		"root": false
+	},
+	"physical_strength_III": {
+		"definition": "physical_strength_III",
+		"x": 160,
+		"y": -96,
+		"root": false
+	},
+	"feather_falling_I": {
+		"definition": "feather_falling_I",
+		"x": 96,
+		"y": -64,
+		"root": false
+	},
+	"feather_falling_II": {
+		"definition": "feather_falling_II",
+		"x": 128,
+		"y": -96,
+		"root": false
+	},
     "macgyver": {
         "definition": "macgyver",
         "x": -64,
