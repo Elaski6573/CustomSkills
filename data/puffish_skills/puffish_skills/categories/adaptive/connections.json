@@ -40,7 +40,8 @@
             ["strength_II","strength_III"],
             ["practiced_swing","quick_draw_I"],
             ["quick_draw_I","quick_draw_II"],
-            ["quick_draw_II","quick_draw_III"]
+            ["quick_draw_II","quick_draw_III"],
+            ["magic_research","expand_curios_back_I"]
         ],
         "unidirectional": [
             

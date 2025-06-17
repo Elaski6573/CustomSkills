@@ -108,16 +108,25 @@
                                 }
                             }
                         ]
-                    }
+                    },
+                    "tools": {
+				        "operations": [
+					        {       
+						        "type": "get_tool_item_stack"
+					        },
+					        {
+					        	"type": "puffish_skills:test",
+					        	"data": {
+					        		"item": "#c:tools"
+					        	}
+					        }
+				        ]
+			        }
                 },
                 "experience": [
                     {
-                        "condition": "(!ores & !leaves) & (mineable_axe | mineable_hoe | mineable_pickaxe | mineable_shovel)",
+                        "condition": "(!ores & !leaves) & (mineable_axe | mineable_hoe | mineable_pickaxe | mineable_shovel | tools)",
                         "expression": "1"
-                    },
-                    {
-                        "condition": "ores",
-                        "expression": "250"
                     }
                 ]
             }

@@ -214,5 +214,11 @@
         "x": 0,
         "y": 80,
         "root": false
+    },
+    "expand_curios_back_I": {
+        "definition": "expand_curios_back_I",
+        "x": -32,
+        "y": 80,
+        "root": false
     }
 }

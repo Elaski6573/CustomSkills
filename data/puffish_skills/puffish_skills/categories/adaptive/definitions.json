@@ -66,11 +66,11 @@
                         {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"1","color":"green"}],
         "extra_description": [
             {"text":"\n허기를 소비하는데 사용되는 지구력 수치를 증가시킵니다.\n"},
-            {"text":"이는 곧 스테미나 총량을 증가시켜 소비되는 지지\n"}],
+            {"text":"이는 곧 스테미나 총량을 증가시켜 소비되는 허기가 감소되게 만듭니다.\n"}],
         "icon": {
             "type": "effect",
             "data": {
-                "effect": "absorption"
+                "effect": "saturation"
             }
         },
         "rewards": [
@@ -319,7 +319,7 @@
         },
         "description": [{"text":"도구를 사용할 때 "},{"text":"채굴 속도","color":"yellow"},{"text":"가 "},{ "text": "5%","color": "green"},{ "text":" 증가합니다.\n"},
                         {"text":"적용되는 도구 : 곡괭이, 도끼, 삽\n","italic": true},
-                        {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"1","color":"green"}],
+                        {"text":"\n필요한 포인트 : ","color":"gray"},{"text":"2","color":"green"}],
         "icon": {
             "type": "item",
             "data": {
@@ -355,7 +355,7 @@
         ]
     },
     "mining_I": {
-        "title": "채광광 I",
+        "title": "채광 I",
         "frame": {
             "type": "advancement",
             "data": {
@@ -382,7 +382,7 @@
         ]
     },
     "mining_II": {
-        "title": "채광광 II",
+        "title": "채광 II",
         "frame": {
             "type": "advancement",
             "data": {
@@ -1027,6 +1027,33 @@
         },
         "required_skills": 2,
         "size": 2        
+    },
+    "expand_curios_back_I": {
+        "title": "등 슬롯 확장 I",
+        "frame": {
+            "type": "advancement",
+            "data": {
+                "frame": "task"
+            }
+        },
+        "description": [{"text":"등 슬롯","color":"blue"},{"text":"이 ","color":"gray"},{"text":"1","color":"green"},{"text":" 증가합니다.\n","color":"gray"}
+        ],
+        "extra_description": [{"text":"\nCurio 슬롯을 확인하세요..\n","color":"gray","italic": true}],
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "sophisticatedbackpacks:backpack"
+            }
+        },
+        "cost": 1,
+        "rewards": [
+            {
+                "type": "puffish_skills:command",
+                "data": {
+                    "unlock_command": "curios add back @s 1",
+                    "lock_command": "curios remove back @s 1"
+                }
+            }
+        ]
     }
-
 }
