@@ -28,13 +28,13 @@
             }
         },
         {
-            "type": "puffish_skills:break_block",
+            "type": "puffish_skills:mine_block",
             "data": {
                 "variables": {
                     "mineable_axe": {
                         "operations": [
                             {
-                                "type": "get_broken_block_state"
+                                "type": "get_mined_block_state"
                             },
                             {
                                 "type": "puffish_skills:test",
@@ -47,7 +47,7 @@
                     "mineable_hoe": {
                         "operations": [
                             {
-                                "type": "get_broken_block_state"
+                                "type": "get_mined_block_state"
                             },
                             {
                                 "type": "puffish_skills:test",
@@ -60,7 +60,7 @@
                     "mineable_pickaxe": {
                         "operations": [
                             {
-                                "type": "get_broken_block_state"
+                                "type": "get_mined_block_state"
                             },
                             {
                                 "type": "puffish_skills:test",
@@ -73,7 +73,7 @@
                     "mineable_shovel": {
                         "operations": [
                             {
-                                "type": "get_broken_block_state"
+                                "type": "get_mined_block_state"
                             },
                             {
                                 "type": "puffish_skills:test",
@@ -86,7 +86,7 @@
                     "ores": {
                         "operations": [
                             {
-                                "type": "get_broken_block_state"
+                                "type": "get_mined_block_state"
                             },
                             {
                                 "type": "puffish_skills:test",
@@ -99,7 +99,7 @@
                     "leaves": {
                         "operations": [
                             {
-                                "type": "get_broken_block_state"
+                                "type": "get_mined_block_state"
                             },
                             {
                                 "type": "puffish_skills:test",
